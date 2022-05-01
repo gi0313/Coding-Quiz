@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timed Coding Quiz</title>
+    <link rel ="stylesheet" href = "./assets/css/style.css">
 </head>
-<body>
+<body> 
+    <header>
+        <div class ="score">
+            <button id = "highscore">View high scores</button>
+        </div>
+        <div id = "timer" class = "timer">Time: 60</div>
+    </header>
+    <!--Container for the questions-->
+    <section id ="question-container" class="question-start">
+        <h1>Welcome to Javascript Quiz Challenge</h1>
+        <p>
+            Try to answer the following code-related questions within the time limit. 
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <div>
+            <button>StartQuiz</button>
+        </div>
+    </section>
     
+    <script src ="./assets/js/script.js"></script>
 </body>
 </html>
