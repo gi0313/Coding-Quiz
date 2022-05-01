@@ -9,4 +9,23 @@ body {
     line-height: 1.5;
     width: 60%;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+button {
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: darkblue;
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color: white;
    }

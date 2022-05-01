@@ -26,46 +26,26 @@ var questions = [
     correctAnswer: "3"
     },
 ]
- var time = 75;
+ var time = 60;
  var startButton = document.getElementById("start-btn");
- var timeEl = document.getElementById("timer");
-//Quiz start
-var startQuiz = function() {
+ var questionBoxEl = document.getElementById("question-box");
+
+//quiz start
+var startGame = function() {
     startButton.remove();
+    console.log("started");
 
-    renderQuestion()
+    nextQuestion();
 }
 
-var renderQuestion = function() {
-    var questionDiv = document.createElement("div");
+//next question
+var nextQuestion = function() {
+    var questionBox = document.createElement("div");
 
+    questionBox.innerHTML = questions[0].question;
 }
 
-//timer
+//actual question
 
-function timer() {
-    time--;
-    timeEl.textContent = "Time: " + time;
-    if (time === 0) {
-        //ends when timer is 0
-    }
-}
 
-//question
-var renderChoices = function() {
-    var answerDiv = document.createElement("div");
-
-    for (let i = 0; i<questions.length; i++) {
-
-    }
-}
-//check answer
-var checkAnswer = function(event) {
-    if (correct) {
-
-    }
-
-}
-
-startButton.addEventListener("click", startQuiz);
-answerDiv.addEventListener("click", checkAnswer);
+startButton.addEventListener("click", startGame);
