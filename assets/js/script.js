@@ -56,9 +56,8 @@ var runningQuestionIndex = 0;
 //quiz start
 var startGame = function() {
     startButton.remove();
-
     renderQuestion();
-}
+};
 //timer rundown
 function countdown() {
     time--;
@@ -66,7 +65,7 @@ function countdown() {
     if (timeLeft <= 0) {
     saveScore();
     }
-   }
+   };
 
 //question rendering
 var renderQuestion = function() {
@@ -77,7 +76,7 @@ var renderQuestion = function() {
     answer2.innerHTML= questionBox.answer2;
     answer3.innerHTML= questionBox.answer3
     answer4.innerHTML= questionBox.answer4
-}
+};
 
 
 startButton.addEventListener("click", startGame);
